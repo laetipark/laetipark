@@ -115,7 +115,7 @@ function App() {
                 <a href={'https://brawltree.me/'} target={'_blank'}>
                   Brawl Tree
                 </a>
-                <a href={'https://blossomstats.sites/'} target={'_blank'}>
+                <a href={'https://blossomstats.site/'} target={'_blank'}>
                   Blossom Stats(클럽 전용)
                 </a>
               </p>
