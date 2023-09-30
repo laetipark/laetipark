@@ -1,42 +1,77 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    max-width: 100%;
+    min-height: 300px;
+    padding: 12px;
+    gap: 20px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+@media (min-width: 576px) {
+    #root {
+        max-width: 556px;
+        margin: 0 auto;
+    }
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (min-width: 768px) {
+    #root {
+        max-width: 748px;
+        margin: 0 auto;
+    }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+@media (min-width: 1024px) {
+    #root {
+        max-width: 924px;
+        margin: 0 auto;
+    }
 }
 
-.card {
-  padding: 2em;
+.title {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #2A52A3;
+    border-radius: 4px;
+    gap: 4px;
 }
 
-.read-the-docs {
-  color: #888;
+.title > div {
+    display: flex;
+    flex-direction: row;
+    gap: 4px
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+    .projects {
+        display: grid;
+        grid-template-columns: 40% 58%;
+        justify-content: space-between;
+    }
+}
+
+.projects img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.two-columns {
+    display: flex;
+    gap: 12px;
 }
