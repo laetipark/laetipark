@@ -53,7 +53,8 @@ function App() {
         </h2>
         <div>
           <h3>
-            <FontAwesomeIcon icon={faCaretRight} width={16} /> 데이터를 통해 일상을 편하고 즐겁게 만드는 것을 좋아합니다.
+            <FontAwesomeIcon icon={faCaretRight} width={16} /> 데이터를 통해
+            일상을 편하고 즐겁게 만드는 것을 좋아합니다.
           </h3>
           <p>
             • 서비스의 기능이 수행되도록 구현하는 백엔드 개발에 관심 있어요.
@@ -64,7 +65,10 @@ function App() {
           </p>
         </div>
         <div>
-          <h3><FontAwesomeIcon icon={faCaretRight} width={16} /> 꾸준한 자기 개발하려는 노력합니다.</h3>
+          <h3>
+            <FontAwesomeIcon icon={faCaretRight} width={16} /> 꾸준한 자기
+            개발하려는 노력합니다.
+          </h3>
           <p>
             • Node.js 프레임워크 학습하면서 express에서 NestJS로 마이그레이션
             진행해 보았습니다.
@@ -142,7 +146,7 @@ function App() {
         </h2>
         <div>
           <h3>
-            <FontAwesomeIcon icon={faCaretRight} width={16} /> 정보처리 기사
+            <FontAwesomeIcon icon={faCaretRight} width={16} /> 정보처리기사
             (2022.09)
           </h3>
           <h3>
