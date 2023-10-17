@@ -1,5 +1,5 @@
 ## ❓ 소개
-
+#### 🙂 일상을 편하고 즐겁게 만드는 것을 좋아하는 개발자입니다!
 [![BLEX](https://img.shields.io/badge/ABOUT_DONGHUN_PARK-4180ff?style=for-the-badge&logo=GITHUB&logoColor=FFFFFF)](https://laetipark.github.io/laetipark/)
 
 ## ✨ 스킬
@@ -7,6 +7,7 @@
 ### 📖 언어
 
 ![Javascript](https://img.shields.io/badge/Javascript-F7DF1E?style=flat-square&logo=Javascript&logoColor=000000)
+![Typescript](https://img.shields.io/badge/Typescript-3178C6?style=flat-square&logo=Typescript&logoColor=FFFFFF)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=FFFFFF)
 ![Java](https://img.shields.io/badge/Java-F8981D?style=flat-square&logo=OpenJDK&logoColor=000000&color=fedcba)
 
