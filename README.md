@@ -1,5 +1,7 @@
 ## ❓ 소개
+
 #### 🙂 일상을 편하고 즐겁게 만드는 것을 좋아하는 개발자입니다!
+
 [![BLEX](https://img.shields.io/badge/ABOUT_DONGHUN_PARK-4180ff?style=for-the-badge&logo=GITHUB&logoColor=FFFFFF)](https://laetipark.github.io/laetipark/)
 
 ## ✨ 스킬

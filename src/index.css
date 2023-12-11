@@ -1,11 +1,17 @@
+@font-face {
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-family: 'Nanum Gothic Coding', monospace, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
 
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
-    background-color: #1B3568;
+    background-color: #2A52A3;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -15,9 +21,10 @@
 }
 
 a {
+    display: flex;
     font-weight: 500;
-    color: #B9C7E1;
-    border-bottom: 1px solid #4180ff;
+    color: #CDDFFF;
+    border-bottom: 1px solid #2F71B3;
     padding-bottom: 1px;
     text-decoration: inherit;
     text-decoration-thickness: 5px;
@@ -41,12 +48,26 @@ body {
 p {
     margin: 0 0 8px 20px;
     padding: 0;
+
+    & > div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
+    display: flex;
     margin: 0 0 8px;
     padding: 0;
     line-height: 1.1;
+    gap: 4px;
+
+    & > div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
 }
 
 h1 {
@@ -80,6 +101,17 @@ button:hover {
 button:focus,
 button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin: 0 0 8px 20px;
+    gap: 4px;
+
+    & > input {
+        display: none;
+    }
 }
 
 @media (prefers-color-scheme: light) {

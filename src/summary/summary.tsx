@@ -1,27 +1,38 @@
+import { faCaretRight, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
+import { useState } from 'react';
 
 const Summary = () => {
+  const [checked, setChecked] = useState(false);
+  const arrowRotate = {
+    transform: checked ? 'rotate(90deg)' : '',
+    transition: 'transform 0.3s ease',
+  };
+
   return (
     <div>
       <h2>
         <span>소개</span>
       </h2>
       <div>
-        <h3>
-          <FontAwesomeIcon icon={faCaretRight} width={16} />{' '}
-          <span>
-            데이터를 통해 일상을 편하고 즐겁게 만드는 것을 좋아합니다.
-          </span>
-        </h3>
+        <div>
+          <h3>
+            <FontAwesomeIcon icon={faCaretRight} width={16} />{' '}
+            <div>
+              <span>데이터를 통해 일상을 편하고</span>
+              <span>즐겁게 만드는 것을 좋아합니다.</span>
+            </div>
+          </h3>
+        </div>
         <div>
           <div>
             <p>
-              <span>
-                • 데이터를 구조화하고 서비스 기능이 수행되도록 구현하는
-              </span>
-              <span style={{ fontWeight: 800 }}>백엔드</span>
-              <span>개발에 관심 있어요.</span>
+              <div>
+                <span>• 데이터를 구조화하고 서비스 기능이</span>
+                <span>수행되도록 구현하는</span>
+                <span className={'mark'}>백엔드</span>
+                <span>개발에 관심 있어요.</span>
+              </div>
             </p>
           </div>
         </div>
@@ -29,30 +40,110 @@ const Summary = () => {
       <div>
         <h3>
           <FontAwesomeIcon icon={faCaretRight} width={16} />{' '}
-          <span>꾸준한 자기 개발하려는 노력합니다.</span>
+          <div>
+            <span>자기 계발과 자기 개발을 위해</span>
+            <span>꾸준히, 적극적으로 도전합니다.</span>
+          </div>
         </h3>
         <div>
           <p>
-            <span>• 참고하거나 기억하기 위해 문제 풀이 또는 배운 것들을</span>
-            <span style={{ fontWeight: 800 }}>블로그</span>
-            <span>와</span>
-            <span style={{ fontWeight: 800 }}>깃허브</span>
-            <span>에 기록합니다.</span>
+            <div>
+              <span>• 참고하거나 기억하기 위해 문제 풀이</span>
+              <span>또는 배운 것들을</span>
+              <span className={'mark'}>블로그</span>
+              <span>와</span>
+              <span className={'mark'}>깃허브</span>
+              <span>에 기록합니다.</span>
+            </div>
           </p>
-          <p>
-            <span style={{ fontWeight: 800 }}>• solved.ac :</span>
-            <a
-              href={'https://solved.ac/creator98'}
-              style={{ padding: 0, border: 'none' }}
-            >
-              <img
-                src={
-                  'https://mazassumnida.wtf/api/mini/generate_badge?boj=creator98'
-                }
-                alt={'solved.ac 프로필'}
+          <div>
+            <label form={'check'}>
+              <FontAwesomeIcon
+                icon={faAngleRight}
+                width={12}
+                style={arrowRotate}
               />
-            </a>
-          </p>
+              <strong>목록</strong>
+              <input
+                id={'check'}
+                type={'checkbox'}
+                onChange={({ target: { checked } }) => setChecked(checked)}
+              />
+            </label>
+            {checked && (
+              <p>
+                <p>
+                  • <span className={'mark'}>코딩 테스트</span>:
+                  <a
+                    href={'https://github.com/laetipark/coding-test'}
+                    style={{ padding: 0, border: 'none' }}
+                    target={'_blank'}
+                  >
+                    <img
+                      src={
+                        'https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=Github&logoColor=FFFFFF'
+                      }
+                      alt={'repository'}
+                    />
+                  </a>
+                  <a
+                    href={'https://blex.me/@laetipark/series/coding-test'}
+                    style={{ padding: 0, border: 'none' }}
+                    target={'_blank'}
+                  >
+                    <img
+                      src={
+                        'https://img.shields.io/badge/BLEX-181717?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDE1NSAxNDIiPiAgICA8cGF0aCBmaWxsPSIjZmZmIiAgICAgICAgICBkPSJNMzMgOTVIMjNsLTUgMS00IDEtNiA0YTIyIDIyIDAgMCAwLTYgMTdjMCAxMiAxMSAyMCAyMyAyMiAxMyAyIDMwLTE5IDMwLTE5bDE0LTE4IDE0LTE5IDEwLTE0IDEyLTE3IDctMTEgNy05di0xbDEzLTIwIDYtMTEtMjYgMzEtOCAxMC05IDExLTEyIDE1LTExIDEzLTggMTAtMTEgMTItOCA4LTggOC03IDZjLTggMy0xMy0zLTE1LTV2LTljMi02IDgtMTAgMTgtMTZabTM3IDM5YzIgMiA4IDQgMTMgNWgzM2wxNS01YTQ2IDQ2IDAgMCAwIDE1LTE0bDUtMTEgMi05YzAtNC0yLTgtNC0xMWwtOS05LTExLTZzOC0yIDEwLTRjNS0yIDQtMiA3LTVsNi04YzItMyAxLTUgMi05IDAtNC0xLTYtMy05bC01LTktNy02LTgtNWMtNC0zLTgtNC0xMS00bC0xNC0yYTEzNCAxMzQgMCAwIDAtNDMgMiAxNzIgMTcyIDAgMCAwLTM1IDE0Yy00IDEtNiA0LTYgNGE1OCA1OCAwIDAgMCAxMyAzbDEwIDRhOTkgOTkgMCAwIDAgMTggOWwtMy00LTUtNS02LTVjLTUtNC00LTMtMi00YTc4IDc4IDAgMCAxIDE1LTVsMTItM2gyMGwxNCAxYzMgMSA5IDEgMTIgMyAzIDEgNCAyIDUgNGw3IDcgNCA2YzEgNCAwIDgtMiAxMmwtNiA3Yy00IDQtMTIgOC0xMiA4bC02IDQgNiA0IDEzIDEyYzkgOSA3IDEzIDEgMjJsLTkgOS0xNSA4LTEyIDItMTEgMkg3MFoiLz48L3N2Zz4='
+                      }
+                      alt={'repository'}
+                    />
+                  </a>
+                </p>
+                <p>
+                  • <span className={'mark'}>웹 프로그래밍</span>:
+                  <a
+                    href={'https://github.com/laetipark/web-programming'}
+                    style={{ padding: 0, border: 'none' }}
+                    target={'_blank'}
+                  >
+                    <img
+                      src={
+                        'https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=Github&logoColor=FFFFFF'
+                      }
+                      alt={'repository'}
+                    />
+                  </a>
+                </p>
+                <p>
+                  • <span className={'mark'}>Node.js</span>:
+                  <a
+                    href={'https://github.com/laetipark/node_js-textbook'}
+                    style={{ padding: 0, border: 'none' }}
+                    target={'_blank'}
+                  >
+                    <img
+                      src={
+                        'https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=Github&logoColor=FFFFFF'
+                      }
+                      alt={'repository'}
+                    />
+                  </a>
+                  <a
+                    href={'https://blex.me/@laetipark/series/node_js'}
+                    style={{ padding: 0, border: 'none' }}
+                    target={'_blank'}
+                  >
+                    <img
+                      src={
+                        'https://img.shields.io/badge/BLEX-181717?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDE1NSAxNDIiPiAgICA8cGF0aCBmaWxsPSIjZmZmIiAgICAgICAgICBkPSJNMzMgOTVIMjNsLTUgMS00IDEtNiA0YTIyIDIyIDAgMCAwLTYgMTdjMCAxMiAxMSAyMCAyMyAyMiAxMyAyIDMwLTE5IDMwLTE5bDE0LTE4IDE0LTE5IDEwLTE0IDEyLTE3IDctMTEgNy05di0xbDEzLTIwIDYtMTEtMjYgMzEtOCAxMC05IDExLTEyIDE1LTExIDEzLTggMTAtMTEgMTItOCA4LTggOC03IDZjLTggMy0xMy0zLTE1LTV2LTljMi02IDgtMTAgMTgtMTZabTM3IDM5YzIgMiA4IDQgMTMgNWgzM2wxNS01YTQ2IDQ2IDAgMCAwIDE1LTE0bDUtMTEgMi05YzAtNC0yLTgtNC0xMWwtOS05LTExLTZzOC0yIDEwLTRjNS0yIDQtMiA3LTVsNi04YzItMyAxLTUgMi05IDAtNC0xLTYtMy05bC01LTktNy02LTgtNWMtNC0zLTgtNC0xMS00bC0xNC0yYTEzNCAxMzQgMCAwIDAtNDMgMiAxNzIgMTcyIDAgMCAwLTM1IDE0Yy00IDEtNiA0LTYgNGE1OCA1OCAwIDAgMCAxMyAzbDEwIDRhOTkgOTkgMCAwIDAgMTggOWwtMy00LTUtNS02LTVjLTUtNC00LTMtMi00YTc4IDc4IDAgMCAxIDE1LTVsMTItM2gyMGwxNCAxYzMgMSA5IDEgMTIgMyAzIDEgNCAyIDUgNGw3IDcgNCA2YzEgNCAwIDgtMiAxMmwtNiA3Yy00IDQtMTIgOC0xMiA4bC02IDQgNiA0IDEzIDEyYzkgOSA3IDEzIDEgMjJsLTkgOS0xNSA4LTEyIDItMTEgMkg3MFoiLz48L3N2Zz4='
+                      }
+                      alt={'repository'}
+                    />
+                  </a>
+                </p>
+              </p>
+            )}
+          </div>
         </div>
       </div>
       <div>
@@ -75,12 +166,6 @@ const Summary = () => {
               }
               alt={'Typescript'}
             />
-            <img
-              src={
-                'https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=FFFFFF'
-              }
-              alt={'Python'}
-            />
           </p>
           <p>
             <span style={{ fontWeight: 800 }}>• 런타임 및 프레임워크 : </span>
@@ -89,12 +174,6 @@ const Summary = () => {
                 'https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=Node.js&logoColor=FFFFFF'
               }
               alt={'Node.js'}
-            />
-            <img
-              src={
-                'https://img.shields.io/badge/Express-000000?style=flat-square&logo=Express&logoColor=FFFFFF'
-              }
-              alt={'Express'}
             />
             <img
               src={
