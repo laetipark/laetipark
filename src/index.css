@@ -11,7 +11,7 @@
 
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
-    background-color: #2A52A3;
+    background-color: #374259;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -46,7 +46,7 @@ body {
 }
 
 p {
-    margin: 0 0 8px 20px;
+    margin: 0 0 8px 12px;
     padding: 0;
 
     & > div {

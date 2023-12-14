@@ -33,6 +33,7 @@
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=flat-square&logo=Ubuntu&logoColor=FFFFFF)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=Git&logoColor=FFFFFF)
 ![Github](https://img.shields.io/badge/Github-181717?style=flat-square&logo=Github&logoColor=FFFFFF)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=Docker&logoColor=FFFFFF)
 
 ## 💻 기술 블로그
 

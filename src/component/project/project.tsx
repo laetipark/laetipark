@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
-import brawltree from '../assets/brawltree.png';
+import brawltree from '../../assets/brawltree.png';
 
 const Project = () => {
   return (
@@ -11,7 +11,7 @@ const Project = () => {
       <div>
         <h3>
           <FontAwesomeIcon icon={faCaretRight} width={16} />{' '}
-          <span>Brawl Tree (2023. 09)</span>
+          <span>Brawl Tree (2023. 01 ~ )</span>
         </h3>
         <div className={'projects'}>
           <div>

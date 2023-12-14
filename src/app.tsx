@@ -6,12 +6,13 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
-import Summary from './summary/summary.tsx';
-import Project from './project/project.tsx';
-import Education from './education/education.tsx';
-import Experience from './experience/experience.tsx';
+import Summary from './component/summary/summary.tsx';
+import Project from './component/project/project.tsx';
+import Education from './component/education/education.tsx';
+import Experience from './component/experience/experience.tsx';
 
-import './App.css';
+import './app.css';
+import Skill from './component/skill/skill.tsx';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
       </div>
       <Summary />
       <Project />
+      <Skill />
       <Education />
       <Experience />
     </React.Fragment>
