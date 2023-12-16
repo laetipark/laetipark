@@ -23,13 +23,15 @@ function App() {
         </h1>
         <div>
           <span>
-            <FontAwesomeIcon icon={faEnvelopeSquare} width={16} /> 이메일:
+            <FontAwesomeIcon icon={faEnvelopeSquare} width={16} fontSize={16} />{' '}
+            이메일:
           </span>
           <a href={'mailto:creator98@naver.com'}>creator98@naver.com</a>
         </div>
         <div>
           <span>
-            <FontAwesomeIcon icon={faGithubSquare} width={16} /> 깃허브:
+            <FontAwesomeIcon icon={faGithubSquare} width={16} fontSize={16} />{' '}
+            깃허브:
           </span>
           <a href={'https://github.com/laetipark'} target={'_blank'}>
             github.com/laetipark
@@ -37,7 +39,8 @@ function App() {
         </div>
         <div>
           <span>
-            <FontAwesomeIcon icon={faRssSquare} width={16} /> 블로그:
+            <FontAwesomeIcon icon={faRssSquare} width={16} fontSize={16} />{' '}
+            블로그:
           </span>
           <a href={'https://blex.me/@laetipark'} target={'_blank'}>
             blex.me/@laetipark

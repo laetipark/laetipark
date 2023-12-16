@@ -4,8 +4,14 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
-    font-family: 'Nanum Gothic Coding', monospace, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-family: 'Nanum Gothic Coding', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
 
@@ -58,6 +64,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
     display: flex;
+    align-items: center;
     margin: 0 0 8px;
     padding: 0;
     line-height: 1.1;
@@ -75,11 +82,11 @@ h1 {
 }
 
 h2 {
-    font-size: 1.6rem;
+    font-size: 24px;
 }
 
 h3 {
-    font-size: 1.2rem;
+    font-size: 20px;
 }
 
 button {
@@ -127,4 +134,8 @@ label {
     button {
         background-color: #f9f9f9;
     }
+}
+
+strong {
+    font-weight: 800;
 }

@@ -10,7 +10,7 @@ const Skill = () => {
       <div>
         <div>
           <h3>
-            <FontAwesomeIcon icon={faCaretRight} width={16} />{' '}
+            <FontAwesomeIcon icon={faCaretRight} width={16} fontSize={16} />{' '}
             <span>언어 :</span>
           </h3>
           <p>
@@ -30,7 +30,7 @@ const Skill = () => {
         </div>
         <div>
           <h3>
-            <FontAwesomeIcon icon={faCaretRight} width={16} />{' '}
+            <FontAwesomeIcon icon={faCaretRight} width={16} fontSize={16} />{' '}
             <span>런타임 및 프레임워크 :</span>
           </h3>
           <p>
@@ -56,7 +56,7 @@ const Skill = () => {
         </div>
         <div>
           <h3>
-            <FontAwesomeIcon icon={faCaretRight} width={16} />{' '}
+            <FontAwesomeIcon icon={faCaretRight} width={16} fontSize={16} />{' '}
             <span>도구 :</span>
           </h3>
           <p>

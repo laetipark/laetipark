@@ -1,4 +1,4 @@
-import { faCaretRight, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { faAngleRight, faCaretRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 
@@ -17,7 +17,7 @@ const Summary = () => {
       <div>
         <div>
           <h3>
-            <FontAwesomeIcon icon={faCaretRight} width={16} />{' '}
+            <FontAwesomeIcon icon={faCaretRight} width={16} fontSize={16} />{' '}
             <div>
               <span>
                 데이터를 통해 일상을 편하고 즐겁게 만드는 것을 좋아합니다.
@@ -56,7 +56,7 @@ const Summary = () => {
       </div>
       <div>
         <h3>
-          <FontAwesomeIcon icon={faCaretRight} width={16} />{' '}
+          <FontAwesomeIcon icon={faCaretRight} width={16} fontSize={16} />{' '}
           <div>
             <span>자기개발과 자기계발을 위해 직접 발로</span>
             <span>뛰어가며 참여하는 것을 좋아합니다.</span>
@@ -65,22 +65,21 @@ const Summary = () => {
         <div>
           <p>
             <div>
-              <span>• 다양한 알고리즘이나 문제들을 풀이해가며</span>
-              <span>알게된 사실 혹은 프로젝트하면서 배운 것들을</span>
               <span>
+                • 다양한 알고리즘이나 문제들을 풀이해가며 알게된 사실 혹은
+                프로젝트하면서 배운 것들을{' '}
                 <span className={'mark'}>블로그</span>와{' '}
-                <span className={'mark'}>깃허브</span>에 기록하는 것을
-                좋아합니다.
+                <span className={'mark'}>깃허브</span>에{' '}
+                <span className={'mark'}>기록</span>하는 것을 좋아합니다.
               </span>
+              <span></span>
+              <span></span>
             </div>
             <div>
               <span>
-                • 평소 <span className={'mark'}>소통</span>하는 것을 좋아하며,
-                코드에 관한
-              </span>
-              <span>의견을 주고 받고 서비스 목표를 달성하기 위해</span>
-              <span>
-                꾸준히 <span className={'mark'}>생각</span>하는 습관이 있습니다.
+                • 평소 <span className={'mark'}>소통</span>하는 것을 좋아해,
+                코드에 관한 의견을 주고 받고 서비스 목표를 달성하기 위해 꾸준히{' '}
+                <span className={'mark'}>생각</span>하는 습관이 있습니다.
               </span>
             </div>
           </p>
@@ -91,7 +90,7 @@ const Summary = () => {
                 width={12}
                 style={arrowRotate}
               />
-              <strong style={{ fontSize: 18 }}>목록</strong>
+              <strong style={{ fontSize: 18 }}>학습 기록 목록</strong>
               <input
                 id={'check'}
                 type={'checkbox'}
