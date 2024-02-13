@@ -92,8 +92,7 @@ const Project = () => {
             <span className={'highlight'}>
               * 이전 프로젝트와 다르게 많은 사용자들 데이터를 주기적으로
               받아오는 것에 어려움이 있었는데,{' '}
-              <span className={'mark'}>worker thread</span>를 이용해 작업을
-              분배해 병렬적으로 처리할 수 있도록 구현하였습니다.
+              <span className={'mark'}>병렬 방식을 통한 대량의 데이터 수집 scheduler</span>를 이용해 구현하였습니다.
             </span>
           </p>
           <p>
