@@ -17,7 +17,7 @@
 
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
-    background-color: #374259;
+    background-color: #7286D3;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -29,7 +29,7 @@
 a {
     display: flex;
     font-weight: 500;
-    color: #CDDFFF;
+    color: #FFF2F2;
     border-bottom: 1px solid #2F71B3;
     padding-bottom: 1px;
     text-decoration: inherit;
@@ -37,7 +37,7 @@ a {
 }
 
 a:hover {
-    color: #4180ff;
+    color: #E5E0FF;
 }
 
 body {

@@ -52,7 +52,7 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background-color: #545B77;
+    background-color: #8EA7E9;
     border-radius: 4px;
     gap: 8px;
 }
@@ -129,6 +129,6 @@
 }
 
 .highlight {
-    color: #DE5135;
+    color: #A6B1E1;
     font-size: 14px;
 }
