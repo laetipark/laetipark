@@ -33,7 +33,6 @@ a {
     border-bottom: 1px solid #2F71B3;
     padding-bottom: 1px;
     text-decoration: inherit;
-    text-decoration-thickness: 5px;
 }
 
 a:hover {
@@ -52,7 +51,7 @@ body {
 }
 
 p {
-    margin: 0 0 8px 12px;
+    margin: 0 ;
     padding: 0;
 
     & > div {
@@ -65,7 +64,7 @@ p {
 h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
-    margin: 0 0 8px;
+    margin: 0;
     padding: 0;
     line-height: 1.1;
     gap: 4px;
@@ -113,12 +112,17 @@ button:focus-visible {
 label {
     display: flex;
     align-items: center;
-    margin: 0 0 8px 20px;
+    margin: 8px 0 0 8px;
     gap: 4px;
+    cursor: pointer;
 
     & > input {
         display: none;
     }
+}
+
+.label_content {
+    margin-left: 16px;
 }
 
 @media (prefers-color-scheme: light) {
