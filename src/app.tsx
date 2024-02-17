@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
 import { Summary } from './component/summary/summary.tsx';
-import Project from './component/project/project.tsx';
+import { Project } from './component/project/project.tsx';
 import Education from './component/education/education.tsx';
 import Experience from './component/experience/experience.tsx';
 

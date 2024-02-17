@@ -3,7 +3,7 @@ import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 
 const Skill = () => {
   return (
-    <div>
+    <div className={'skill'}>
       <h2>
         <span>스킬</span>
       </h2>
