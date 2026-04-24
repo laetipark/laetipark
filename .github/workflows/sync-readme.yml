@@ -1,0 +1,30 @@
+name: Sync README from laetipark.github.io
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  sync-readme:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+
+      - name: Download README from laetipark.github.io
+        run: |
+          curl -L https://raw.githubusercontent.com/laetipark/laetipark.github.io/main/README.md -o README.md
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add README.md
+          git diff --cached --quiet || git commit -m "Sync README from laetipark.github.io"
+          git push
